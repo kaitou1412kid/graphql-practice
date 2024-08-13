@@ -1,0 +1,15 @@
+type  Query {
+    studentById(id : ID): Student
+    getAllStudents: [Student]
+}
+
+type Student {
+    id: ID
+    name: String
+    course: String
+    roll: Int
+}
+
+type Mutation {
+    addStudent(id: ID!, name: String!, course: String!, roll: Int!) : Student!
+}
